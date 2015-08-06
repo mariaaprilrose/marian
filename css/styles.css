@@ -1,0 +1,231 @@
+@font-face {
+  font-family: 'Fundamental';
+  src: url('../fonts/fundamental-bold.ttf');
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('../fonts/Roboto-Regular.ttf');
+}
+
+@font-face {
+  font-family: 'Handwriting';
+  src: url('../fonts/Handwriting.ttf');
+}
+
+.head-text {
+  /*position: relative;
+  top: 1px;
+  line-height: 1;
+  display: inline-block;*/
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: 'Fundamental';
+  font-style: normal;
+  font-weight: normal;
+}
+
+.cursive{
+	color: rgb(251,4,35);
+	font-family: 'Handwriting';
+	font-weight: bolder;
+	/*text-stroke: 1px black;
+	-webkit-text-stroke: 1px black;
+	-moz-osx-text-stroke: 1px black;*/
+
+	-webkit-text-shadow: 2px 3px 2px rgba(150, 150, 150, .6);
+	-moz-osx-text-shadow: 2px 3px 2px rgba(150, 150, 150, .6);
+	text-shadow: 2px 3px 2px rgba(150, 150, 150, .6);
+
+	-webkit-font-smoothing: antialiased;
+  	-moz-osx-font-smoothing: grayscale;
+
+  	-webkit-animation: anim 2s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-direction: alternate;
+    -webkit-animation-play-state: running;
+
+  	-moz-osx-animation: anim 2s;
+    -moz-osx-animation-iteration-count: infinite;
+    -moz-osx-animation-direction: alternate;
+    -moz-osx-animation-play-state: running;
+
+  	animation: anim 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-play-state: running;
+}
+
+.cursive2{
+	color: rgb(0,0,128);
+	font-family: 'Handwriting';
+	font-weight: bolder;
+	/*text-stroke: 1px black;
+	-webkit-text-stroke: 1px black;
+	-moz-osx-text-stroke: 1px black;*/
+
+	-webkit-text-shadow: 2px 3px 2px rgba(150, 150, 150, .6);
+	-moz-osx-text-shadow: 2px 3px 2px rgba(150, 150, 150, .6);
+	text-shadow: 2px 3px 2px rgba(150, 150, 150, .6);
+
+	-webkit-font-smoothing: antialiased;
+  	-moz-osx-font-smoothing: grayscale;
+}
+
+@-webkit-keyframes anim {
+    from {opacity: 0.5;}
+    to {opacity: 1;}
+}
+
+@-moz-osx-keyframes anim {
+    from {opacity: 0.5;}
+    to {opacity: 1;}
+}
+
+@keyframes anim {
+    from {opacity: 0.5;}
+    to {opacity: 1;}
+}
+
+body{
+	background-color: black;
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	font-family: 'Roboto', Tahoma, Verdana, Sans-Serif;
+  	-webkit-font-smoothing: antialiased;
+  	-moz-osx-font-smoothing: grayscale;
+}
+
+.container{
+	max-width: 85%;
+	background-color: rgba(256, 256, 256, .85);
+}
+
+.container:nth-of-type(odd){
+	background-color: #fff;
+	border: 1px solid gray;
+}
+
+.lrborder{
+	border-left: 1px solid black;
+	border-right: 1px solid black;
+}
+
+h3, h4, h2, p a, a button{
+	color: rgb(0,0,128);
+}
+
+a h3:hover{
+	text-decoration: underline;
+}
+
+a{
+	color: black;
+}
+
+.header, .header2, .footer{
+	background-color: #fff;
+	border-top: solid 2px #666;
+	border-bottom: solid 2px #666;
+	-webkit-box-shadow: 0px 0px 20px 2px rgba(50, 50, 50, 0.75);
+	-moz-box-shadow: 0px 0px 20px 2px rgba(50, 50, 50, 0.75);
+	box-shadow: 0px 0px 20px 2px rgba(50, 50, 50, 0.75);
+}
+
+.loading-page{
+	width: 100%;
+	max-width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	z-index: 8888;
+}
+
+.client img, .partner img{
+	width: 80%;
+	height: 80%;
+}
+
+.client h4, .client a{
+	color: rgb(251,4,35);
+}
+
+.navrow{
+	background-color: #ddd;
+	border: 1px solid #006064;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+}
+
+.navrow a{
+	color: rgb(0,0,96);
+	font-weight: bold;
+}
+
+.navrow > div:hover{
+	background-color: #fff;
+}
+
+.navrow > div{
+	padding-left: 0px;
+	padding-right: 0px;
+}
+
+.partner > div{
+	border: 1px solid rgba(0,0,0,0);
+}
+
+.news-group > div{
+	border: 1px solid rgba(0,0,0,0);
+}
+
+.news-group img{
+	height: 100px;
+}
+
+.hover-div > div:hover{
+	background-color: #eee;
+	border: 1px solid #006064;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+}
+
+.box{
+	background-color: #fff;
+	border: 1px solid #006064;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+}
+
+.news-group img, .consultant img, .offer img{
+	max-width: 100%;
+	max-height: auto;
+}
+
+.news-info, .partner-info{
+	padding-top: 150px;
+	margin-top: -150px;
+}
+
+.Flexible-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 30px;
+    height: 0;
+    overflow: hidden;
+}
+
+.Flexible-container iframe,
+.Flexible-container object,
+.Flexible-container embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
